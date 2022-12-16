@@ -177,7 +177,7 @@
 
       <img src="{% static customer.profile_pic.url %}" class="profile_image" alt="">
       <h4>{{request.user.first_name}}</h4>
-      <h6 style="color: rgb(255, 255, 255);">( Customer )</h6>
+      {% comment %} <h6 style="color: rgb(255, 255, 255);">( Customer )</h6> {% endcomment %}
 
     </center>
 

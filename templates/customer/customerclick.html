@@ -25,12 +25,14 @@
   {% include "insurance/navbar.html" %}
   <br><br>
   <div class="jumbotron text-center" style="margin-bottom:0px;">
-    <h1 class="display-4">Hello, Customer</h1>
-    <p class="lead">Welcome to Insurance Management System</p>
+    {% comment %} <h1 class="display-4">Hello, Customer</h1> {% endcomment %}
+    <h1 class="disply-4">Welcome to Insurance Management System</h1>
     <hr class="my-4">
-    <p>You can access various features after Login.</p>
+    {% comment %} <p>Kindly Login to access various features.</p> {% endcomment %}
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="customersignup" role="button">Create Your Account</a>
+      <p> Create New Account by Signing up </p><br>
+      <a class="btn btn-primary btn-lg" href="customersignup" role="button">Sign Up</a><br><br><br>
+      <p> Already Registered?</p><br>
       <a class="btn btn-primary btn-lg" href="customerlogin" role="button">Login</a>
     </p>
     <br><br><br>
