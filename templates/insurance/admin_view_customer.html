@@ -47,8 +47,10 @@
           <th>Name</th>
           <th>Profile Picture</th>
           <th>Mobile</th>
+          <th>Email</th>
           <th>Address</th>
-         
+          <th>Age</th>
+          
           <th>Update</th>
           <th>Delete</th>
         </tr>
@@ -59,8 +61,9 @@
         <td> {{t.get_name}}</td>
         <td> <img src="{% static t.profile_pic.url %}" alt="Profile Pic" height="40px" width="40px" /></td>
         <td>{{t.mobile}}</td>
+        <td>{{t.email}}</td>
         <td>{{t.address}}</td>
-        
+        <td>{{t.age}}</td>
         <td><a class="btn btn-primary btn-xs" href="{% url 'update-customer' t.id  %}"><span class="glyphicon glyphicon-edit"></span></a></td>
         <td><a class="btn btn-danger btn-xs" href="{% url 'delete-customer' t.id  %}"><span class="glyphicon glyphicon-trash"></span></a></td>
       </tr>

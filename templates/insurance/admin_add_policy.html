@@ -9,11 +9,7 @@ content %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  a:link {
+    a:link {
       text-decoration: none;
     }
   </style>
@@ -25,8 +21,8 @@ content %}
     <label for="course_name">Policy ID</label>
     {% render_field policyForm.policy_id class="form-control" placeholder="1" %}
 
-    <label for="course_name">Policy Type</label>
-    {% render_field policyForm.policy_type class="form-control"
+    <label for="course_name">Category</label>
+    {% render_field policyForm.category class="form-control"
     placeholder="Automobile Insurance" %}
     <label for="course_name">Duration</label>
     {% render_field policyForm.duration class="form-control" placeholder="Life
