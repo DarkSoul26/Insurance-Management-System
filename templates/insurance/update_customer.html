@@ -61,10 +61,10 @@ content %}
   >
     {% csrf_token %}
     <label for="first_name">First Name</label>
-    {% render_field customerForm.first_name class="form-control" placeholder="First
+    {% render_field userForm.first_name class="form-control" placeholder="First
     Name" %}
     <label for="last_name">Last Name</label>
-    {% render_field customerForm.last_name class="form-control" placeholder="Last
+    {% render_field userForm.last_name class="form-control" placeholder="Last
     Name" %}
     <label for="mobile">Mobile</label>
     {% render_field customerForm.mobile class="form-control"
@@ -79,10 +79,10 @@ content %}
     {% render_field customerForm.age class="form-control" placeholder="Address"
     %}
     <label for="username">Username</label>
-    {% render_field customerForm.username class="form-control"
+    {% render_field userForm.username class="form-control"
     placeholder="Username" %}
     <label for="password">Password</label>
-    {% render_field customerForm.password class="form-control"
+    {% render_field userForm.password class="form-control"
     placeholder="Password" %} <br /><br />
     <label for="profile_pic">Profile Picture</label>
     {% render_field customerForm.profile_pic class="form-control"
