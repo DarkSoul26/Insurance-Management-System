@@ -120,7 +120,7 @@ transform: translate(0%,0%);
 
 
 
-<div class="log-form">
+<div class="log-form" style="padding: 25px;"" >
   <h2 class="text-center">LOGIN TO YOUR ACCOUNT</h2><br>
   <form method="post">
    {% csrf_token %}
@@ -128,7 +128,7 @@ transform: translate(0%,0%);
      <br>
     {% render_field form.password class="form-control" placeholder="Password" %}
     <br>
-    <button type="submit" class="btn primary text-center">Login</button>
+    <button type="submit" class="btn btn-outline-primary primary text-center">Login</button>
     
   </form>
 </div><!--end log form -->
