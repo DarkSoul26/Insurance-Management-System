@@ -51,7 +51,7 @@ content %}
 </head>
 
 <br /><br />
-<h3 style="text-align: center">UPDATE CUSTOMER</h3>
+<h3 style="text-align: center">UPDATE AGENT</h3>
 <div>
   <form
     method="post"
@@ -59,34 +59,22 @@ content %}
     enctype="multipart/form-data"
     style="margin-left: 200px; margin-right: 200px"
   >
-    {% csrf_token %}
-    <label for="first_name">First Name</label>
-    {% render_field customerForm.first_name class="form-control" placeholder="First
+    {%csrf_token%}
+
+    <label for="course_name">Agent Name</label>
+    {% render_field agentForm.agent_name class="form-control" placeholder="Full
     Name" %}
-    <label for="last_name">Last Name</label>
-    {% render_field customerForm.last_name class="form-control" placeholder="Last
-    Name" %}
-    <label for="mobile">Mobile</label>
-    {% render_field customerForm.mobile class="form-control"
-    placeholder="Mobile" %}
-    <label for="mobile">Email</label>
-    {% render_field customerForm.email class="form-control" placeholder="Mobile"
+    <label for="course_name">Contact</label>
+    {% render_field agentForm.contact class="form-control" placeholder="Contact
+    Number" %}
+
+    <label for="course_name">Email Id</label>
+    {% render_field agentForm.email_id class="form-control" placeholder="Email
+    ID" %}
+
+    <label for="course_name">Address</label>
+    {% render_field agentForm.address class="form-control" placeholder="Address"
     %}
-    <label for="address">Address</label>
-    {% render_field customerForm.address class="form-control"
-    placeholder="Address" %}
-    <label for="address">Age</label>
-    {% render_field customerForm.age class="form-control" placeholder="Address"
-    %}
-    <label for="username">Username</label>
-    {% render_field customerForm.username class="form-control"
-    placeholder="Username" %}
-    <label for="password">Password</label>
-    {% render_field customerForm.password class="form-control"
-    placeholder="Password" %} <br /><br />
-    <label for="profile_pic">Profile Picture</label>
-    {% render_field customerForm.profile_pic class="form-control"
-    placeholder="Profile Picture" %}
     <br /><br />
     <input type="submit" value="Update" />
   </form>

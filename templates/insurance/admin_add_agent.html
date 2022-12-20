@@ -1,0 +1,44 @@
+{% extends 'insurance/adminbase.html' %} {% load widget_tweaks %} {% block
+    content %}
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <style>
+        a:link {
+          text-decoration: none;
+        }
+      </style>
+    </head>
+    <h2 style="text-align: center; color: blue">ADD AGENT</h2>
+    <form method="POST" autocomplete="off" style="margin: 100px; margin-top: 0px">
+      {%csrf_token%}
+      <div class="form-group">
+        <label for="course_name">Agent Id</label>
+        {% render_field agentForm.agent_id class="form-control" placeholder="1" %}
+    
+        <label for="course_name">Agent Name</label>
+        {% render_field agentForm.agent_name class="form-control"
+        placeholder="Sanchit Kalsi" %}
+        <label for="course_name">Contact</label>
+        {% render_field agentForm.contact class="form-control" placeholder="1234567890" %}
+    
+        <label for="course_name">Email Id</label>
+        {% render_field agentForm.email_id class="form-control"
+        placeholder="sanchitkalsi@gmail.com" %}
+    
+        <label for="course_name">Address</label>
+        {% render_field agentForm.address class="form-control"
+        placeholder="xyz flat, abc street, qwe city, 123456 " %}
+      </div>
+    
+      <br />
+      <button type="submit" class="btn btn-primary">ADD</button>
+    </form>
+    <br /><br /><br /><br />
+    {% endblock content %}
+    
