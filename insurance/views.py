@@ -132,7 +132,8 @@ def update_category_view(request,pk):
             return redirect('admin-update-category')
     return render(request,'insurance/update_category.html',{'categoryForm':categoryForm})
   
-  
+def payment(request):
+    return render(request, 'customer/Payment.html')
 
 def admin_policy_view(request):
     return render(request,'insurance/admin_policy.html')
