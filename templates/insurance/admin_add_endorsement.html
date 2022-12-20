@@ -14,17 +14,24 @@ content %}
     }
   </style>
 </head>
-<h2 style="text-align: center; color: blue">ADD CATEGORY</h2>
+<h2 style="text-align: center; color: blue">ADD ENDORSEMENT</h2>
 <form method="POST" autocomplete="off" style="margin: 100px; margin-top: 0px">
   {%csrf_token%}
   <div class="form-group">
-    <label for="course_name">Category Name</label>
-    {% render_field categoryForm.category_name class="form-control"
-    placeholder="Life Insurance" %}
+    <label for="course_name">Endorsement Id</label>
+    {% render_field endorsementForm.endorsement_id class="form-control"
+    placeholder="1" %}
+
+    <label for="course_name">Type</label>
+    {% render_field endorsementForm.type class="form-control" placeholder="xyz"
+    %}
+    <label for="course_name">Benefit</label>
+    {% render_field endorsementForm.benefit class="form-control"
+    placeholder="abc" %}
   </div>
 
   <br />
   <button type="submit" class="btn btn-primary">ADD</button>
 </form>
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br />
 {% endblock content %}

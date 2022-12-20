@@ -24,9 +24,9 @@ urlpatterns = [
     path('update-customer/<int:pk>', views.update_customer_view,name='update-customer'),
     path('delete-customer/<int:pk>', views.delete_customer_view,name='delete-customer'),
 
-    path('admin-view-agent', views.admin_view_agent_view,name='admin-view-agent'),
-    path('update-agent/<int:pk>', views.update_agent_view,name='update-agent'),
-    path('delete-agent/<int:pk>', views.delete_agent_view,name='delete-agent'),
+    # path('admin-view-agent', views.admin_view_agent_view,name='admin-view-agent'),
+    # path('update-agent/<int:pk>', views.update_agent_view,name='update-agent'),
+    # path('delete-agent/<int:pk>', views.delete_agent_view,name='delete-agent'),
 
     path('admin-category', views.admin_category_view,name='admin-category'),
     path('admin-view-category', views.admin_view_category_view,name='admin-view-category'),
@@ -36,13 +36,13 @@ urlpatterns = [
     path('admin-delete-category', views.admin_delete_category_view,name='admin-delete-category'),
     path('delete-category/<int:pk>', views.delete_category_view,name='delete-category'),
 
-    path('admin-agent', views.admin_agent_view,name='admin-agent'),
-    path('admin-add-agent', views.admin_add_agent_view,name='admin-add-agent'),
-    path('admin-view-agent', views.admin_view_agent_view,name='admin-view-agent'),
-    path('admin-update-agent', views.admin_update_agent_view,name='admin-update-agent'),
-    path('update-agent/<int:pk>', views.update_agent_view,name='update-agent'),
-    path('admin-delete-agent', views.admin_delete_agent_view,name='admin-delete-agent'),
-    path('delete-agent/<int:pk>', views.delete_agent_view,name='delete-agent'),
+    # path('admin-agent', views.admin_agent_view,name='admin-agent'),
+    # path('admin-add-agent', views.admin_add_agent_view,name='admin-add-agent'),
+    # path('admin-view-agent', views.admin_view_agent_view,name='admin-view-agent'),
+    # path('admin-update-agent', views.admin_update_agent_view,name='admin-update-agent'),
+    # path('update-agent/<int:pk>', views.update_agent_view,name='update-agent'),
+    # path('admin-delete-agent', views.admin_delete_agent_view,name='admin-delete-agent'),
+    # path('delete-agent/<int:pk>', views.delete_agent_view,name='delete-agent'),
     
     path('admin-policy', views.admin_policy_view,name='admin-policy'),
     path('admin-add-policy', views.admin_add_policy_view,name='admin-add-policy'),
